@@ -196,6 +196,10 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
+# Methodology 
+1200 sample of registered voters
+
+#Online survey
 
 # Additional data details
 

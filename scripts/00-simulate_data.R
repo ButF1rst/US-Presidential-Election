@@ -11,42 +11,36 @@
 
 #### Workspace setup ####
 library(tidyverse)
-set.seed(853)
+library(dplyr)
+set.seed(29)
 
 
-#### Simulate data ####
-# State names
-states <- c(
-  "New South Wales",
-  "Victoria",
-  "Queensland",
-  "South Australia",
-  "Western Australia",
-  "Tasmania",
-  "Northern Territory",
-  "Australian Capital Territory"
+# Define the number of samples to simulate
+n <- 100
+
+# Create a data frame
+set.seed(123)  # For reproducibility
+simulated_data <- data.frame(
+  poll_id = 1:n,
+  pollster = rep("YouGov", n),
+  state = sample(c("California", "Texas", "Florida", "New York", "Pennsylvania"), n, replace = TRUE),
+  methodology = sample(c("Online", "Telephone", "Mixed"), n, replace = TRUE),
+  start_date = sample(seq(as.Date('2023-01-01'), as.Date('2023-12-31'), by="day"), n, replace = TRUE),
+  end_date = sample(seq(as.Date('2023-01-02'), as.Date('2024-01-01'), by="day"), n, replace = TRUE),
+  sample_size = sample(500:1500, n, replace = TRUE),
+  party = sample(c("Democrat", "Republican"), n, replace = TRUE, prob = c(0.5, 0.5)),
+  answer = sample(c("Candidate A", "Candidate B"), n, replace = TRUE),
+  pct = runif(n, 40, 60)  # Random percentages between 40 and 60
 )
 
-# Political parties
-parties <- c("Labor", "Liberal", "Greens", "National", "Other")
+# Adjust dates to ensure end_date is always after start_date
+simulated_data <- simulated_data %>%
+  mutate(end_date = ifelse(end_date < start_date, start_date + 1, end_date))
 
-# Create a dataset by randomly assigning states and parties to divisions
-analysis_data <- tibble(
-  division = paste("Division", 1:151),  # Add "Division" to make it a character
-  state = sample(
-    states,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
-  ),
-  party = sample(
-    parties,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
-  )
-)
+# Print the head of the simulated data
+head(simulated_data)
+
+# Optionally, write the data to a CSV file for external use
+write.csv(simulated_data, "data/00-simulated_data/simulated_data.csv", row.names = FALSE)
 
 
-#### Save data ####
-write_csv(analysis_data, "data/00-simulated_data/simulated_data.csv")

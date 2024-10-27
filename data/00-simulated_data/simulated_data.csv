@@ -1,152 +1,101 @@
-division,state,party
-Division 1,Victoria,Liberal
-Division 2,New South Wales,Liberal
-Division 3,Tasmania,Liberal
-Division 4,New South Wales,Liberal
-Division 5,Queensland,Liberal
-Division 6,New South Wales,Labor
-Division 7,Victoria,Liberal
-Division 8,Western Australia,Labor
-Division 9,Western Australia,Greens
-Division 10,Queensland,Labor
-Division 11,Queensland,Labor
-Division 12,Northern Territory,Liberal
-Division 13,New South Wales,Labor
-Division 14,Western Australia,Labor
-Division 15,Western Australia,National
-Division 16,Victoria,Liberal
-Division 17,South Australia,Liberal
-Division 18,Victoria,Liberal
-Division 19,Western Australia,Labor
-Division 20,South Australia,Labor
-Division 21,New South Wales,Liberal
-Division 22,Queensland,Greens
-Division 23,New South Wales,Liberal
-Division 24,New South Wales,Liberal
-Division 25,Queensland,Labor
-Division 26,Victoria,National
-Division 27,New South Wales,Liberal
-Division 28,Queensland,Liberal
-Division 29,Tasmania,Liberal
-Division 30,South Australia,Liberal
-Division 31,New South Wales,Liberal
-Division 32,Victoria,Labor
-Division 33,Tasmania,Liberal
-Division 34,New South Wales,Liberal
-Division 35,Western Australia,Labor
-Division 36,New South Wales,Liberal
-Division 37,Tasmania,Greens
-Division 38,Tasmania,Labor
-Division 39,Victoria,Greens
-Division 40,South Australia,Labor
-Division 41,New South Wales,Other
-Division 42,New South Wales,Other
-Division 43,Tasmania,Labor
-Division 44,Tasmania,National
-Division 45,Queensland,Liberal
-Division 46,Australian Capital Territory,Other
-Division 47,Queensland,Labor
-Division 48,Queensland,Other
-Division 49,South Australia,Liberal
-Division 50,Victoria,National
-Division 51,South Australia,Liberal
-Division 52,Victoria,Labor
-Division 53,South Australia,National
-Division 54,Queensland,Liberal
-Division 55,Queensland,Labor
-Division 56,South Australia,Liberal
-Division 57,New South Wales,Other
-Division 58,Northern Territory,Liberal
-Division 59,New South Wales,Labor
-Division 60,Western Australia,Labor
-Division 61,New South Wales,Liberal
-Division 62,South Australia,Liberal
-Division 63,Queensland,Labor
-Division 64,Tasmania,Labor
-Division 65,South Australia,Labor
-Division 66,Victoria,Labor
-Division 67,Queensland,Liberal
-Division 68,Queensland,Liberal
-Division 69,Tasmania,Labor
-Division 70,South Australia,National
-Division 71,Australian Capital Territory,Labor
-Division 72,Western Australia,Labor
-Division 73,Queensland,National
-Division 74,Victoria,Labor
-Division 75,Western Australia,Labor
-Division 76,Tasmania,Labor
-Division 77,Queensland,Liberal
-Division 78,Western Australia,Liberal
-Division 79,Queensland,Labor
-Division 80,Queensland,Liberal
-Division 81,Victoria,Labor
-Division 82,New South Wales,Liberal
-Division 83,Victoria,Liberal
-Division 84,Queensland,National
-Division 85,Western Australia,Liberal
-Division 86,New South Wales,Labor
-Division 87,Queensland,Liberal
-Division 88,New South Wales,Liberal
-Division 89,Tasmania,Liberal
-Division 90,South Australia,Labor
-Division 91,Victoria,Liberal
-Division 92,New South Wales,Labor
-Division 93,Tasmania,Labor
-Division 94,South Australia,Labor
-Division 95,Victoria,Liberal
-Division 96,Victoria,Labor
-Division 97,Western Australia,Liberal
-Division 98,Queensland,Liberal
-Division 99,South Australia,Liberal
-Division 100,New South Wales,Labor
-Division 101,South Australia,Labor
-Division 102,New South Wales,Labor
-Division 103,Victoria,Labor
-Division 104,Victoria,Labor
-Division 105,South Australia,Other
-Division 106,Western Australia,Labor
-Division 107,Tasmania,Liberal
-Division 108,Victoria,Labor
-Division 109,Queensland,Liberal
-Division 110,Victoria,Labor
-Division 111,Australian Capital Territory,Labor
-Division 112,Victoria,Liberal
-Division 113,Victoria,Liberal
-Division 114,Victoria,Liberal
-Division 115,Tasmania,Labor
-Division 116,Victoria,Labor
-Division 117,New South Wales,Labor
-Division 118,Victoria,Labor
-Division 119,Victoria,Greens
-Division 120,Northern Territory,Labor
-Division 121,South Australia,Liberal
-Division 122,New South Wales,Liberal
-Division 123,New South Wales,Labor
-Division 124,New South Wales,Liberal
-Division 125,New South Wales,National
-Division 126,New South Wales,Labor
-Division 127,Queensland,Labor
-Division 128,New South Wales,Other
-Division 129,Queensland,Labor
-Division 130,Australian Capital Territory,Liberal
-Division 131,Tasmania,Greens
-Division 132,New South Wales,National
-Division 133,New South Wales,Labor
-Division 134,Northern Territory,Labor
-Division 135,South Australia,National
-Division 136,Victoria,Labor
-Division 137,Tasmania,National
-Division 138,South Australia,Liberal
-Division 139,New South Wales,Labor
-Division 140,Victoria,Other
-Division 141,Queensland,Greens
-Division 142,Victoria,National
-Division 143,Western Australia,Labor
-Division 144,Victoria,Labor
-Division 145,Queensland,Liberal
-Division 146,Tasmania,Liberal
-Division 147,South Australia,Liberal
-Division 148,Victoria,Labor
-Division 149,New South Wales,National
-Division 150,New South Wales,Labor
-Division 151,Victoria,Liberal
+"poll_id","pollster","state","methodology","start_date","end_date","sample_size","party","answer","pct"
+1,"YouGov","Florida","Online",2023-06-03,2023-05-29,687,"Democrat","Candidate A",58.4739842638373
+2,"YouGov","Florida","Mixed",2023-02-10,2023-12-17,1457,"Republican","Candidate A",50.8519674092531
+3,"YouGov","Texas","Online",2023-07-31,2023-07-22,963,"Republican","Candidate B",57.0472920034081
+4,"YouGov","Texas","Mixed",2023-08-10,2023-03-23,892,"Democrat","Candidate B",51.6712572658435
+5,"YouGov","Florida","Telephone",2023-06-08,2023-12-05,638,"Republican","Candidate A",53.3664728701115
+6,"YouGov","Pennsylvania","Telephone",2023-12-15,2023-08-21,798,"Democrat","Candidate A",50.226291930303
+7,"YouGov","New York","Online",2023-05-25,2023-09-01,870,"Democrat","Candidate A",55.2550117857754
+8,"YouGov","California","Mixed",2023-02-26,2023-04-17,1169,"Republican","Candidate A",58.0672457581386
+9,"YouGov","Texas","Telephone",2023-05-28,2023-01-12,688,"Republican","Candidate A",56.4094902435318
+10,"YouGov","Florida","Online",2023-06-12,2023-04-24,1469,"Republican","Candidate A",41.4286369923502
+11,"YouGov","Pennsylvania","Mixed",2023-08-26,2023-12-31,810,"Democrat","Candidate A",40.0779268611223
+12,"YouGov","Florida","Mixed",2023-06-10,2023-05-22,688,"Democrat","Candidate A",41.0439723171294
+13,"YouGov","Florida","Mixed",2023-03-07,2023-02-01,917,"Democrat","Candidate A",57.3312035948038
+14,"YouGov","California","Online",2023-01-04,2023-04-26,1068,"Democrat","Candidate A",51.5249033784494
+15,"YouGov","New York","Telephone",2023-11-26,2023-10-06,881,"Republican","Candidate B",46.2768514407799
+16,"YouGov","California","Telephone",2023-08-13,2023-04-05,537,"Republican","Candidate A",59.1893156757578
+17,"YouGov","California","Online",2023-04-27,2023-07-22,583,"Republican","Candidate B",51.8238751403987
+18,"YouGov","Pennsylvania","Telephone",2023-01-25,2023-01-17,818,"Republican","Candidate A",50.6281867157668
+19,"YouGov","Florida","Mixed",2023-05-16,2023-07-17,1185,"Democrat","Candidate B",47.6787334308028
+20,"YouGov","Texas","Mixed",2023-02-24,2023-06-28,1345,"Republican","Candidate B",46.3910645898432
+21,"YouGov","Texas","Online",2023-08-05,2023-06-27,1337,"Republican","Candidate A",56.1677251057699
+22,"YouGov","California","Telephone",2023-03-26,2023-01-13,901,"Democrat","Candidate B",40.8383899694309
+23,"YouGov","Florida","Online",2023-02-14,2023-03-08,1141,"Democrat","Candidate B",47.274853894487
+24,"YouGov","New York","Telephone",2023-05-26,2023-02-20,619,"Democrat","Candidate A",57.1319393394515
+25,"YouGov","California","Mixed",2023-06-19,2023-07-24,1211,"Democrat","Candidate A",53.9589315699413
+26,"YouGov","Florida","Mixed",2023-05-14,2023-06-25,830,"Democrat","Candidate B",53.6897294595838
+27,"YouGov","Pennsylvania","Online",2023-07-18,2023-05-15,1032,"Democrat","Candidate B",46.9603010546416
+28,"YouGov","New York","Mixed",2023-12-27,2023-05-03,940,"Democrat","Candidate A",51.0936365881935
+29,"YouGov","Texas","Telephone",2023-06-25,2023-11-12,698,"Democrat","Candidate B",42.744872351177
+30,"YouGov","Pennsylvania","Online",2023-09-02,2023-09-17,998,"Republican","Candidate A",55.6986311264336
+31,"YouGov","California","Online",2023-11-05,2023-12-20,1098,"Republican","Candidate B",57.7372514316812
+32,"YouGov","California","Telephone",2023-04-14,2023-09-06,571,"Democrat","Candidate B",44.0819176658988
+33,"YouGov","Texas","Mixed",2023-11-05,2023-10-17,814,"Democrat","Candidate B",55.4124592291191
+34,"YouGov","Florida","Online",2023-11-15,2023-02-18,1213,"Democrat","Candidate A",51.9272592151538
+35,"YouGov","New York","Telephone",2023-07-18,2023-11-28,1176,"Republican","Candidate A",59.1533948481083
+36,"YouGov","Pennsylvania","Telephone",2023-07-29,2023-04-11,580,"Republican","Candidate B",43.1737679522485
+37,"YouGov","Pennsylvania","Online",2023-12-15,2023-04-19,554,"Democrat","Candidate B",50.519485482946
+38,"YouGov","Florida","Telephone",2023-08-13,2023-10-29,633,"Democrat","Candidate B",57.4630273506045
+39,"YouGov","California","Online",2023-09-15,2023-01-11,923,"Republican","Candidate A",57.3941214056686
+40,"YouGov","Texas","Online",2023-06-26,2023-06-20,1255,"Republican","Candidate A",40.4737728647888
+41,"YouGov","Pennsylvania","Telephone",2023-05-21,2023-10-08,505,"Democrat","Candidate B",59.5177938695997
+42,"YouGov","Pennsylvania","Online",2023-01-24,2023-12-15,627,"Republican","Candidate A",49.8044839641079
+43,"YouGov","New York","Mixed",2023-05-10,2023-07-29,1378,"Republican","Candidate B",47.7834064606577
+44,"YouGov","Pennsylvania","Online",2023-06-14,2023-11-12,1167,"Democrat","Candidate B",48.3510991977528
+45,"YouGov","Texas","Online",2023-07-10,2023-05-18,1299,"Republican","Candidate B",41.8585164099932
+46,"YouGov","California","Telephone",2023-03-17,2023-11-06,548,"Democrat","Candidate B",43.2361842039973
+47,"YouGov","California","Online",2023-09-26,2023-04-19,1238,"Democrat","Candidate A",48.1083299033344
+48,"YouGov","Florida","Telephone",2023-06-19,2023-01-09,975,"Republican","Candidate B",46.8362888833508
+49,"YouGov","California","Online",2023-07-17,2023-04-25,738,"Democrat","Candidate B",48.3051490643993
+50,"YouGov","Pennsylvania","Online",2023-12-28,2023-09-19,839,"Democrat","Candidate A",46.0810493817553
+51,"YouGov","California","Online",2023-08-22,2023-01-30,692,"Republican","Candidate A",51.2056107493117
+52,"YouGov","Texas","Mixed",2023-03-05,2023-11-03,1208,"Republican","Candidate B",43.1174830114469
+53,"YouGov","New York","Mixed",2023-03-21,2023-11-23,958,"Republican","Candidate B",59.1315952828154
+54,"YouGov","New York","Telephone",2023-02-05,2023-03-16,802,"Republican","Candidate A",40.8793325070292
+55,"YouGov","Florida","Online",2023-10-18,2023-10-10,647,"Democrat","Candidate A",47.4431548547
+56,"YouGov","California","Telephone",2023-09-10,2023-03-15,1397,"Republican","Candidate A",59.2523068282753
+57,"YouGov","Texas","Mixed",2023-12-09,2023-09-25,689,"Republican","Candidate A",52.9085503146052
+58,"YouGov","California","Telephone",2023-11-19,2023-09-20,1123,"Democrat","Candidate A",41.225252286531
+59,"YouGov","Texas","Mixed",2023-02-17,2023-08-13,690,"Republican","Candidate A",48.198918569833
+60,"YouGov","New York","Telephone",2023-04-21,2023-07-24,945,"Republican","Candidate A",48.5181026812643
+61,"YouGov","Pennsylvania","Mixed",2023-10-06,2023-07-31,618,"Democrat","Candidate A",50.1631616940722
+62,"YouGov","Pennsylvania","Online",2023-11-13,2023-08-08,1126,"Republican","Candidate A",48.991998215206
+63,"YouGov","Florida","Online",2023-10-22,2023-07-04,1021,"Democrat","Candidate A",52.4652276700363
+64,"YouGov","California","Online",2023-08-10,2023-12-19,1126,"Republican","Candidate B",42.7995586208999
+65,"YouGov","New York","Online",2023-10-14,2023-06-05,558,"Democrat","Candidate A",58.1589280162007
+66,"YouGov","California","Mixed",2023-08-10,2023-04-30,1316,"Republican","Candidate A",51.3888654951006
+67,"YouGov","California","Telephone",2023-03-14,2023-12-11,1402,"Republican","Candidate A",50.9656114783138
+68,"YouGov","Florida","Online",2023-10-19,2023-03-09,560,"Republican","Candidate B",42.3365524504334
+69,"YouGov","New York","Telephone",2023-08-14,2023-04-21,921,"Democrat","Candidate B",55.2405666466802
+70,"YouGov","California","Online",2023-10-05,2023-05-15,607,"Democrat","Candidate B",49.5673889340833
+71,"YouGov","Florida","Mixed",2023-06-21,2023-02-06,791,"Democrat","Candidate B",55.6393782934174
+72,"YouGov","Pennsylvania","Mixed",2023-10-24,2023-02-25,872,"Democrat","Candidate B",40.920530972071
+73,"YouGov","Florida","Online",2023-12-14,2023-08-29,1034,"Democrat","Candidate B",56.3968933559954
+74,"YouGov","Texas","Telephone",2023-04-03,2023-05-01,614,"Democrat","Candidate B",45.3881689487025
+75,"YouGov","Pennsylvania","Mixed",2023-05-05,2023-12-17,1429,"Republican","Candidate B",45.6570082902908
+76,"YouGov","Pennsylvania","Online",2023-10-26,2023-11-01,1099,"Republican","Candidate A",52.8644311893731
+77,"YouGov","Florida","Mixed",2023-02-08,2023-01-11,1143,"Republican","Candidate A",58.9623767556623
+78,"YouGov","Texas","Telephone",2023-08-25,2023-06-03,1449,"Republican","Candidate B",40.1399690890685
+79,"YouGov","Texas","Online",2023-06-14,2023-04-11,912,"Democrat","Candidate B",47.0323534402996
+80,"YouGov","Texas","Online",2023-04-17,2023-04-16,1197,"Democrat","Candidate A",48.3809144981205
+81,"YouGov","New York","Online",2023-02-02,2023-10-09,1482,"Republican","Candidate B",49.15753594134
+82,"YouGov","Texas","Online",2023-03-24,2023-06-30,1262,"Democrat","Candidate A",54.2338515864685
+83,"YouGov","Texas","Online",2023-12-20,2023-10-06,702,"Republican","Candidate A",58.3969611534849
+84,"YouGov","New York","Mixed",2023-10-04,2023-08-30,1257,"Democrat","Candidate A",52.5422140117735
+85,"YouGov","New York","Telephone",2023-07-28,2023-01-25,1492,"Democrat","Candidate A",58.0436355667189
+86,"YouGov","California","Telephone",2023-03-17,2023-06-17,745,"Republican","Candidate A",55.1465831836686
+87,"YouGov","Florida","Telephone",2023-04-04,2023-02-17,939,"Republican","Candidate A",42.7571673132479
+88,"YouGov","Florida","Mixed",2023-10-18,2023-07-11,1446,"Republican","Candidate B",43.0650975601748
+89,"YouGov","California","Online",2023-01-30,2023-02-07,1189,"Republican","Candidate B",43.8262437377125
+90,"YouGov","Florida","Telephone",2023-08-05,2023-06-24,750,"Democrat","Candidate A",48.6637028120458
+91,"YouGov","Pennsylvania","Telephone",2023-06-24,2023-02-24,1059,"Democrat","Candidate A",41.7443860368803
+92,"YouGov","Texas","Online",2023-11-19,2023-10-31,1142,"Democrat","Candidate B",44.47560002096
+93,"YouGov","Florida","Telephone",2023-04-25,2023-07-27,1044,"Republican","Candidate B",51.442973590456
+94,"YouGov","Texas","Online",2023-12-04,2023-01-20,1489,"Republican","Candidate A",48.0033835675567
+95,"YouGov","Pennsylvania","Online",2023-04-06,2023-07-20,661,"Democrat","Candidate A",51.3093076134101
+96,"YouGov","Pennsylvania","Telephone",2023-12-24,2023-06-09,821,"Republican","Candidate A",56.5924775740132
+97,"YouGov","Florida","Mixed",2023-06-19,2023-02-07,1075,"Republican","Candidate B",52.8422763897106
+98,"YouGov","New York","Online",2023-04-06,2023-04-14,667,"Republican","Candidate A",47.8299750341102
+99,"YouGov","New York","Mixed",2023-01-26,2023-09-02,941,"Republican","Candidate A",54.1915970947593
+100,"YouGov","New York","Online",2023-08-18,2023-02-18,1287,"Republican","Candidate B",42.1764814620838

@@ -1,20 +1,125 @@
-width,length,flying_time
-70,111,1.83
-57,127,2.32
-59,92,2.05
-70,75,1.1
-62,112,2.32
-68,103.5,0.5
-58,108,1.7
-79,114,0.86
-56,186,3.42
-87,68,1.37
-50,118,2.68
-49,186,1.83
-61,116,1.32
-60,127,1
-56,184,2.79
-69,124,1.4
-60,95,1.12
-44,137,1.28
-63,125,1.35
+poll_id,pollster,state,methodology,start_date,end_date,sample_size,party,answer,pct
+88762,YouGov,Arizona,Online Panel,10/11/24,10/16/24,1435,DEM,Harris,48
+88762,YouGov,Arizona,Online Panel,10/11/24,10/16/24,1435,REP,Trump,51
+88768,YouGov,Texas,Online Panel,10/2/24,10/10/24,1091,DEM,Harris,46
+88768,YouGov,Texas,Online Panel,10/2/24,10/10/24,1091,REP,Trump,51
+88768,YouGov,Texas,Online Panel,10/2/24,10/10/24,1091,GRE,Stein,2
+88768,YouGov,Texas,Online Panel,10/2/24,10/10/24,1091,LIB,Oliver,1
+88361,YouGov,Georgia,Online Panel,9/20/24,9/24/24,1441,DEM,Harris,49
+88361,YouGov,Georgia,Online Panel,9/20/24,9/24/24,1441,REP,Trump,51
+88070,YouGov,Michigan,Online Panel,9/3/24,9/6/24,1077,DEM,Harris,50
+88070,YouGov,Michigan,Online Panel,9/3/24,9/6/24,1077,REP,Trump,49
+88071,YouGov,Pennsylvania,Online Panel,9/3/24,9/6/24,1078,DEM,Harris,50
+88071,YouGov,Pennsylvania,Online Panel,9/3/24,9/6/24,1078,REP,Trump,50
+88072,YouGov,Wisconsin,Online Panel,9/3/24,9/6/24,946,DEM,Harris,51
+88072,YouGov,Wisconsin,Online Panel,9/3/24,9/6/24,946,REP,Trump,49
+88067,YouGov,Texas,Online Panel,8/23/24,8/31/24,1200,DEM,Harris,44
+88067,YouGov,Texas,Online Panel,8/23/24,8/31/24,1200,REP,Trump,49
+88067,YouGov,Texas,Online Panel,8/23/24,8/31/24,1200,GRE,Stein,2
+88067,YouGov,Texas,Online Panel,8/23/24,8/31/24,1200,LIB,Oliver,0
+88067,YouGov,Texas,Online Panel,8/23/24,8/31/24,1200,DEM,Harris,44
+88067,YouGov,Texas,Online Panel,8/23/24,8/31/24,1200,REP,Trump,49
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,DEM,Harris,43
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,REP,Trump,42.5
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,DEM,Harris,43
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,REP,Trump,41
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,IND,Kennedy,3
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,GRE,Stein,1
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,IND,West,0
+88080,YouGov,Pennsylvania,Online Panel,8/15/24,8/23/24,500,LIB,Oliver,0.5
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,DEM,Harris,48
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,REP,Trump,42
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,DEM,Harris,45
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,REP,Trump,40
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,IND,Kennedy,4
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,GRE,Stein,0.5
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,IND,West,1
+88081,YouGov,Wisconsin,Online Panel,8/15/24,8/23/24,500,LIB,Oliver,0
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,DEM,Harris,44
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,REP,Trump,43.5
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,DEM,Harris,44
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,REP,Trump,41.5
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,IND,Kennedy,5
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,GRE,Stein,0
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,IND,West,1
+88082,YouGov,Michigan,Online Panel,8/15/24,8/23/24,500,LIB,Oliver,0.5
+87934,YouGov,Missouri,Online Panel,8/8/24,8/16/24,900,DEM,Harris,41
+87934,YouGov,Missouri,Online Panel,8/8/24,8/16/24,900,REP,Trump,54
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,DEM,Biden,34
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,REP,Trump,43
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,IND,Kennedy,8
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,GRE,Stein,2
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,IND,West,2
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,LIB,Oliver,0
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,DEM,Biden,39
+87203,YouGov,Texas,Online Panel,5/31/24,6/9/24,1200,REP,Trump,46
+86963,YouGov,Florida,Online Panel,5/10/24,5/16/24,1181,DEM,Biden,45
+86963,YouGov,Florida,Online Panel,5/10/24,5/16/24,1181,REP,Trump,54
+86963,YouGov,Florida,Online Panel,5/10/24,5/16/24,1174,DEM,Biden,36
+86963,YouGov,Florida,Online Panel,5/10/24,5/16/24,1174,REP,Trump,49
+86963,YouGov,Florida,Online Panel,5/10/24,5/16/24,1174,GRE,Stein,3
+86964,YouGov,Arizona,Online Panel,5/10/24,5/16/24,1193,DEM,Biden,47
+86964,YouGov,Arizona,Online Panel,5/10/24,5/16/24,1193,REP,Trump,52
+86964,YouGov,Arizona,Online Panel,5/10/24,5/16/24,1192,DEM,Biden,40
+86964,YouGov,Arizona,Online Panel,5/10/24,5/16/24,1192,REP,Trump,44
+86964,YouGov,Arizona,Online Panel,5/10/24,5/16/24,1192,GRE,Stein,5
+86739,YouGov,Pennsylvania,Online Panel,4/19/24,4/25/24,1288,DEM,Biden,49
+86739,YouGov,Pennsylvania,Online Panel,4/19/24,4/25/24,1288,REP,Trump,50
+86740,YouGov,Michigan,Online Panel,4/19/24,4/25/24,1262,DEM,Biden,51
+86740,YouGov,Michigan,Online Panel,4/19/24,4/25/24,1262,REP,Trump,49
+86740,YouGov,Michigan,Online Panel,4/19/24,4/25/24,1262,DEM,Biden,45
+86740,YouGov,Michigan,Online Panel,4/19/24,4/25/24,1262,REP,Trump,43
+86740,YouGov,Michigan,Online Panel,4/19/24,4/25/24,1262,IND,Kennedy,9
+86740,YouGov,Michigan,Online Panel,4/19/24,4/25/24,1262,GRE,Stein,3
+86741,YouGov,Wisconsin,Online Panel,4/19/24,4/25/24,1226,DEM,Biden,49
+86741,YouGov,Wisconsin,Online Panel,4/19/24,4/25/24,1226,REP,Trump,50
+86741,YouGov,Wisconsin,Online Panel,4/19/24,4/25/24,1226,DEM,Biden,44
+86741,YouGov,Wisconsin,Online Panel,4/19/24,4/25/24,1226,REP,Trump,48
+86741,YouGov,Wisconsin,Online Panel,4/19/24,4/25/24,1226,GRE,Stein,8
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,DEM,Biden,36
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,REP,Trump,45
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,IND,Kennedy,8
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,IND,West,2
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,GRE,Stein,2
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,DEM,Biden,40
+86775,YouGov,Texas,Online Panel,4/12/24,4/22/24,1200,REP,Trump,48
+86457,YouGov,Georgia,Online Panel,3/4/24,3/11/24,1126,DEM,Biden,48
+86457,YouGov,Georgia,Online Panel,3/4/24,3/11/24,1126,REP,Trump,51
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,DEM,Biden,36
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,REP,Trump,45
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,IND,Kennedy,6
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,IND,West,3
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,GRE,Stein,2
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,DEM,Biden,41
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,REP,Trump,48
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,DEM,Biden,40
+86065,YouGov,Texas,Online Panel,2/2/24,2/12/24,1200,REP,Haley,31
+85733,YouGov,Colorado,Online Panel,12/1/23,12/18/23,800,DEM,Biden,47
+85733,YouGov,Colorado,Online Panel,12/1/23,12/18/23,800,REP,Trump,40
+85733,YouGov,Colorado,Online Panel,12/1/23,12/18/23,800,DEM,Biden,46
+85733,YouGov,Colorado,Online Panel,12/1/23,12/18/23,800,REP,DeSantis,33
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,DEM,Biden,39
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,REP,Trump,45
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,DEM,Biden,37
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,REP,DeSantis,39
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,DEM,Biden,37
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,REP,Ramaswamy,34
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,DEM,Biden,36
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,REP,Haley,33
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,DEM,Biden,34
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,REP,Trump,42
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,IND,Kennedy,8
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,IND,West,3
+85451,YouGov,Texas,Online Panel,12/1/23,12/10/23,1200,GRE,Stein,2
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,DEM,Biden,37
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,REP,Trump,45
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,DEM,Biden,38
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,REP,DeSantis,39
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,DEM,Biden,36
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,REP,Ramaswamy,33
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,DEM,Biden,34
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,REP,Haley,32
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,DEM,Biden,34
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,REP,Scott,33
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,DEM,Biden,36
+84488,YouGov,Texas,Online Panel,10/5/23,10/17/23,1200,REP,Pence,29
