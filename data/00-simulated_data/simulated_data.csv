@@ -1,101 +1,101 @@
 "poll_id","pollster","state","methodology","start_date","end_date","sample_size","party","answer","pct"
-1,"YouGov","Florida","Online",2023-06-03,2023-05-29,687,"Democrat","Candidate A",58.4739842638373
-2,"YouGov","Florida","Mixed",2023-02-10,2023-12-17,1457,"Republican","Candidate A",50.8519674092531
-3,"YouGov","Texas","Online",2023-07-31,2023-07-22,963,"Republican","Candidate B",57.0472920034081
-4,"YouGov","Texas","Mixed",2023-08-10,2023-03-23,892,"Democrat","Candidate B",51.6712572658435
-5,"YouGov","Florida","Telephone",2023-06-08,2023-12-05,638,"Republican","Candidate A",53.3664728701115
-6,"YouGov","Pennsylvania","Telephone",2023-12-15,2023-08-21,798,"Democrat","Candidate A",50.226291930303
-7,"YouGov","New York","Online",2023-05-25,2023-09-01,870,"Democrat","Candidate A",55.2550117857754
-8,"YouGov","California","Mixed",2023-02-26,2023-04-17,1169,"Republican","Candidate A",58.0672457581386
-9,"YouGov","Texas","Telephone",2023-05-28,2023-01-12,688,"Republican","Candidate A",56.4094902435318
-10,"YouGov","Florida","Online",2023-06-12,2023-04-24,1469,"Republican","Candidate A",41.4286369923502
-11,"YouGov","Pennsylvania","Mixed",2023-08-26,2023-12-31,810,"Democrat","Candidate A",40.0779268611223
-12,"YouGov","Florida","Mixed",2023-06-10,2023-05-22,688,"Democrat","Candidate A",41.0439723171294
-13,"YouGov","Florida","Mixed",2023-03-07,2023-02-01,917,"Democrat","Candidate A",57.3312035948038
-14,"YouGov","California","Online",2023-01-04,2023-04-26,1068,"Democrat","Candidate A",51.5249033784494
-15,"YouGov","New York","Telephone",2023-11-26,2023-10-06,881,"Republican","Candidate B",46.2768514407799
-16,"YouGov","California","Telephone",2023-08-13,2023-04-05,537,"Republican","Candidate A",59.1893156757578
-17,"YouGov","California","Online",2023-04-27,2023-07-22,583,"Republican","Candidate B",51.8238751403987
-18,"YouGov","Pennsylvania","Telephone",2023-01-25,2023-01-17,818,"Republican","Candidate A",50.6281867157668
-19,"YouGov","Florida","Mixed",2023-05-16,2023-07-17,1185,"Democrat","Candidate B",47.6787334308028
-20,"YouGov","Texas","Mixed",2023-02-24,2023-06-28,1345,"Republican","Candidate B",46.3910645898432
-21,"YouGov","Texas","Online",2023-08-05,2023-06-27,1337,"Republican","Candidate A",56.1677251057699
-22,"YouGov","California","Telephone",2023-03-26,2023-01-13,901,"Democrat","Candidate B",40.8383899694309
-23,"YouGov","Florida","Online",2023-02-14,2023-03-08,1141,"Democrat","Candidate B",47.274853894487
-24,"YouGov","New York","Telephone",2023-05-26,2023-02-20,619,"Democrat","Candidate A",57.1319393394515
-25,"YouGov","California","Mixed",2023-06-19,2023-07-24,1211,"Democrat","Candidate A",53.9589315699413
-26,"YouGov","Florida","Mixed",2023-05-14,2023-06-25,830,"Democrat","Candidate B",53.6897294595838
-27,"YouGov","Pennsylvania","Online",2023-07-18,2023-05-15,1032,"Democrat","Candidate B",46.9603010546416
-28,"YouGov","New York","Mixed",2023-12-27,2023-05-03,940,"Democrat","Candidate A",51.0936365881935
-29,"YouGov","Texas","Telephone",2023-06-25,2023-11-12,698,"Democrat","Candidate B",42.744872351177
-30,"YouGov","Pennsylvania","Online",2023-09-02,2023-09-17,998,"Republican","Candidate A",55.6986311264336
-31,"YouGov","California","Online",2023-11-05,2023-12-20,1098,"Republican","Candidate B",57.7372514316812
-32,"YouGov","California","Telephone",2023-04-14,2023-09-06,571,"Democrat","Candidate B",44.0819176658988
-33,"YouGov","Texas","Mixed",2023-11-05,2023-10-17,814,"Democrat","Candidate B",55.4124592291191
-34,"YouGov","Florida","Online",2023-11-15,2023-02-18,1213,"Democrat","Candidate A",51.9272592151538
-35,"YouGov","New York","Telephone",2023-07-18,2023-11-28,1176,"Republican","Candidate A",59.1533948481083
-36,"YouGov","Pennsylvania","Telephone",2023-07-29,2023-04-11,580,"Republican","Candidate B",43.1737679522485
-37,"YouGov","Pennsylvania","Online",2023-12-15,2023-04-19,554,"Democrat","Candidate B",50.519485482946
-38,"YouGov","Florida","Telephone",2023-08-13,2023-10-29,633,"Democrat","Candidate B",57.4630273506045
-39,"YouGov","California","Online",2023-09-15,2023-01-11,923,"Republican","Candidate A",57.3941214056686
-40,"YouGov","Texas","Online",2023-06-26,2023-06-20,1255,"Republican","Candidate A",40.4737728647888
-41,"YouGov","Pennsylvania","Telephone",2023-05-21,2023-10-08,505,"Democrat","Candidate B",59.5177938695997
-42,"YouGov","Pennsylvania","Online",2023-01-24,2023-12-15,627,"Republican","Candidate A",49.8044839641079
-43,"YouGov","New York","Mixed",2023-05-10,2023-07-29,1378,"Republican","Candidate B",47.7834064606577
-44,"YouGov","Pennsylvania","Online",2023-06-14,2023-11-12,1167,"Democrat","Candidate B",48.3510991977528
-45,"YouGov","Texas","Online",2023-07-10,2023-05-18,1299,"Republican","Candidate B",41.8585164099932
-46,"YouGov","California","Telephone",2023-03-17,2023-11-06,548,"Democrat","Candidate B",43.2361842039973
-47,"YouGov","California","Online",2023-09-26,2023-04-19,1238,"Democrat","Candidate A",48.1083299033344
-48,"YouGov","Florida","Telephone",2023-06-19,2023-01-09,975,"Republican","Candidate B",46.8362888833508
-49,"YouGov","California","Online",2023-07-17,2023-04-25,738,"Democrat","Candidate B",48.3051490643993
-50,"YouGov","Pennsylvania","Online",2023-12-28,2023-09-19,839,"Democrat","Candidate A",46.0810493817553
-51,"YouGov","California","Online",2023-08-22,2023-01-30,692,"Republican","Candidate A",51.2056107493117
-52,"YouGov","Texas","Mixed",2023-03-05,2023-11-03,1208,"Republican","Candidate B",43.1174830114469
-53,"YouGov","New York","Mixed",2023-03-21,2023-11-23,958,"Republican","Candidate B",59.1315952828154
-54,"YouGov","New York","Telephone",2023-02-05,2023-03-16,802,"Republican","Candidate A",40.8793325070292
-55,"YouGov","Florida","Online",2023-10-18,2023-10-10,647,"Democrat","Candidate A",47.4431548547
-56,"YouGov","California","Telephone",2023-09-10,2023-03-15,1397,"Republican","Candidate A",59.2523068282753
-57,"YouGov","Texas","Mixed",2023-12-09,2023-09-25,689,"Republican","Candidate A",52.9085503146052
-58,"YouGov","California","Telephone",2023-11-19,2023-09-20,1123,"Democrat","Candidate A",41.225252286531
-59,"YouGov","Texas","Mixed",2023-02-17,2023-08-13,690,"Republican","Candidate A",48.198918569833
-60,"YouGov","New York","Telephone",2023-04-21,2023-07-24,945,"Republican","Candidate A",48.5181026812643
-61,"YouGov","Pennsylvania","Mixed",2023-10-06,2023-07-31,618,"Democrat","Candidate A",50.1631616940722
-62,"YouGov","Pennsylvania","Online",2023-11-13,2023-08-08,1126,"Republican","Candidate A",48.991998215206
-63,"YouGov","Florida","Online",2023-10-22,2023-07-04,1021,"Democrat","Candidate A",52.4652276700363
-64,"YouGov","California","Online",2023-08-10,2023-12-19,1126,"Republican","Candidate B",42.7995586208999
-65,"YouGov","New York","Online",2023-10-14,2023-06-05,558,"Democrat","Candidate A",58.1589280162007
-66,"YouGov","California","Mixed",2023-08-10,2023-04-30,1316,"Republican","Candidate A",51.3888654951006
-67,"YouGov","California","Telephone",2023-03-14,2023-12-11,1402,"Republican","Candidate A",50.9656114783138
-68,"YouGov","Florida","Online",2023-10-19,2023-03-09,560,"Republican","Candidate B",42.3365524504334
-69,"YouGov","New York","Telephone",2023-08-14,2023-04-21,921,"Democrat","Candidate B",55.2405666466802
-70,"YouGov","California","Online",2023-10-05,2023-05-15,607,"Democrat","Candidate B",49.5673889340833
-71,"YouGov","Florida","Mixed",2023-06-21,2023-02-06,791,"Democrat","Candidate B",55.6393782934174
-72,"YouGov","Pennsylvania","Mixed",2023-10-24,2023-02-25,872,"Democrat","Candidate B",40.920530972071
-73,"YouGov","Florida","Online",2023-12-14,2023-08-29,1034,"Democrat","Candidate B",56.3968933559954
-74,"YouGov","Texas","Telephone",2023-04-03,2023-05-01,614,"Democrat","Candidate B",45.3881689487025
-75,"YouGov","Pennsylvania","Mixed",2023-05-05,2023-12-17,1429,"Republican","Candidate B",45.6570082902908
-76,"YouGov","Pennsylvania","Online",2023-10-26,2023-11-01,1099,"Republican","Candidate A",52.8644311893731
-77,"YouGov","Florida","Mixed",2023-02-08,2023-01-11,1143,"Republican","Candidate A",58.9623767556623
-78,"YouGov","Texas","Telephone",2023-08-25,2023-06-03,1449,"Republican","Candidate B",40.1399690890685
-79,"YouGov","Texas","Online",2023-06-14,2023-04-11,912,"Democrat","Candidate B",47.0323534402996
-80,"YouGov","Texas","Online",2023-04-17,2023-04-16,1197,"Democrat","Candidate A",48.3809144981205
-81,"YouGov","New York","Online",2023-02-02,2023-10-09,1482,"Republican","Candidate B",49.15753594134
-82,"YouGov","Texas","Online",2023-03-24,2023-06-30,1262,"Democrat","Candidate A",54.2338515864685
-83,"YouGov","Texas","Online",2023-12-20,2023-10-06,702,"Republican","Candidate A",58.3969611534849
-84,"YouGov","New York","Mixed",2023-10-04,2023-08-30,1257,"Democrat","Candidate A",52.5422140117735
-85,"YouGov","New York","Telephone",2023-07-28,2023-01-25,1492,"Democrat","Candidate A",58.0436355667189
-86,"YouGov","California","Telephone",2023-03-17,2023-06-17,745,"Republican","Candidate A",55.1465831836686
-87,"YouGov","Florida","Telephone",2023-04-04,2023-02-17,939,"Republican","Candidate A",42.7571673132479
-88,"YouGov","Florida","Mixed",2023-10-18,2023-07-11,1446,"Republican","Candidate B",43.0650975601748
-89,"YouGov","California","Online",2023-01-30,2023-02-07,1189,"Republican","Candidate B",43.8262437377125
-90,"YouGov","Florida","Telephone",2023-08-05,2023-06-24,750,"Democrat","Candidate A",48.6637028120458
-91,"YouGov","Pennsylvania","Telephone",2023-06-24,2023-02-24,1059,"Democrat","Candidate A",41.7443860368803
-92,"YouGov","Texas","Online",2023-11-19,2023-10-31,1142,"Democrat","Candidate B",44.47560002096
-93,"YouGov","Florida","Telephone",2023-04-25,2023-07-27,1044,"Republican","Candidate B",51.442973590456
-94,"YouGov","Texas","Online",2023-12-04,2023-01-20,1489,"Republican","Candidate A",48.0033835675567
-95,"YouGov","Pennsylvania","Online",2023-04-06,2023-07-20,661,"Democrat","Candidate A",51.3093076134101
-96,"YouGov","Pennsylvania","Telephone",2023-12-24,2023-06-09,821,"Republican","Candidate A",56.5924775740132
-97,"YouGov","Florida","Mixed",2023-06-19,2023-02-07,1075,"Republican","Candidate B",52.8422763897106
-98,"YouGov","New York","Online",2023-04-06,2023-04-14,667,"Republican","Candidate A",47.8299750341102
-99,"YouGov","New York","Mixed",2023-01-26,2023-09-02,941,"Republican","Candidate A",54.1915970947593
-100,"YouGov","New York","Online",2023-08-18,2023-02-18,1287,"Republican","Candidate B",42.1764814620838
+1,"YouGov","Pennsylvania","Online panel",2023-12-01,2023-12-02,555,"Democrat","Candidate A",46.9903421262279
+2,"YouGov","New York","Online panel",2024-05-20,2024-05-21,1344,"Republican","Candidate A",48.9656575489789
+3,"YouGov","Pennsylvania","Online panel",2024-02-02,2024-05-08,1250,"Republican","Candidate B",58.7605873588473
+4,"YouGov","Texas","Online panel",2024-04-17,2024-04-18,849,"Democrat","Candidate B",55.4729141760617
+5,"YouGov","Texas","Online panel",2024-04-28,2024-04-29,604,"Democrat","Candidate A",53.2841037865728
+6,"YouGov","Pennsylvania","Online panel",2024-01-10,2024-02-24,1256,"Democrat","Candidate B",40.4713304527104
+7,"YouGov","Florida","Online panel",2024-07-19,2024-07-20,1470,"Republican","Candidate B",47.5555572099984
+8,"YouGov","New York","Online panel",2024-01-31,2024-02-01,1189,"Democrat","Candidate B",50.2108392259106
+9,"YouGov","Texas","Online panel",2024-06-26,2024-06-27,1152,"Republican","Candidate B",59.7273250389844
+10,"YouGov","California","Online panel",2024-09-25,2024-09-26,846,"Democrat","Candidate B",57.9471534164622
+11,"YouGov","Texas","Online panel",2024-05-07,2024-05-08,747,"Republican","Candidate A",55.8130248403177
+12,"YouGov","Texas","Online panel",2024-06-09,2024-06-10,842,"Republican","Candidate A",48.2776953838766
+13,"YouGov","New York","Online panel",2023-10-30,2023-11-24,848,"Democrat","Candidate B",56.5745455725119
+14,"YouGov","New York","Online panel",2024-07-20,2024-07-21,812,"Democrat","Candidate B",55.8491766778752
+15,"YouGov","New York","Online panel",2024-07-09,2024-09-28,825,"Democrat","Candidate A",59.8463866719976
+16,"YouGov","Texas","Online panel",2023-10-06,2024-02-13,932,"Republican","Candidate B",45.6109359581023
+17,"YouGov","California","Online panel",2023-12-17,2024-06-27,648,"Democrat","Candidate A",56.5199469216168
+18,"YouGov","Florida","Online panel",2024-08-24,2024-08-25,1368,"Democrat","Candidate A",44.0002093557268
+19,"YouGov","Florida","Online panel",2024-07-18,2024-07-19,1138,"Democrat","Candidate B",43.7397692585364
+20,"YouGov","Florida","Online panel",2024-05-14,2024-05-15,1252,"Democrat","Candidate B",41.3459203764796
+21,"YouGov","Texas","Online panel",2023-12-30,2024-07-08,854,"Democrat","Candidate B",44.2009789310396
+22,"YouGov","Texas","Online panel",2023-10-09,2024-05-13,653,"Democrat","Candidate A",52.6977235265076
+23,"YouGov","California","Online panel",2024-06-19,2024-09-28,513,"Republican","Candidate B",56.488992292434
+24,"YouGov","Pennsylvania","Online panel",2024-10-10,2024-10-11,1374,"Republican","Candidate B",56.3549582380801
+25,"YouGov","Pennsylvania","Online panel",2024-03-06,2024-03-07,643,"Democrat","Candidate B",56.133128493093
+26,"YouGov","New York","Online panel",2023-10-27,2024-06-29,1320,"Republican","Candidate B",44.9676019372419
+27,"YouGov","Florida","Online panel",2023-12-09,2024-06-23,931,"Republican","Candidate B",52.4054797366261
+28,"YouGov","California","Online panel",2024-01-10,2024-10-09,758,"Republican","Candidate B",58.2590905483812
+29,"YouGov","Florida","Online panel",2023-11-10,2024-05-08,543,"Republican","Candidate A",49.2699835542589
+30,"YouGov","California","Online panel",2024-03-21,2024-03-22,1381,"Republican","Candidate B",47.7028507133946
+31,"YouGov","Florida","Online panel",2023-11-29,2024-01-07,520,"Democrat","Candidate B",56.3067379267886
+32,"YouGov","Pennsylvania","Online panel",2024-06-19,2024-09-01,547,"Democrat","Candidate A",56.0965658864006
+33,"YouGov","Pennsylvania","Online panel",2024-09-14,2024-09-15,1103,"Republican","Candidate A",51.5508321346715
+34,"YouGov","New York","Online panel",2024-01-22,2024-07-18,775,"Democrat","Candidate B",40.7576045207679
+35,"YouGov","Florida","Online panel",2023-11-16,2024-05-09,1408,"Democrat","Candidate B",45.8785592438653
+36,"YouGov","California","Online panel",2024-08-08,2024-10-10,802,"Republican","Candidate A",40.3830316057429
+37,"YouGov","New York","Online panel",2023-11-28,2024-04-04,655,"Democrat","Candidate A",42.2016196185723
+38,"YouGov","New York","Online panel",2024-04-04,2024-04-05,590,"Democrat","Candidate A",50.5270507698879
+39,"YouGov","California","Online panel",2024-02-23,2024-03-08,726,"Republican","Candidate A",40.0420962320641
+40,"YouGov","Florida","Online panel",2024-05-31,2024-06-01,753,"Democrat","Candidate B",58.6635042214766
+41,"YouGov","Texas","Online panel",2024-01-06,2024-02-11,1166,"Democrat","Candidate B",48.6854122765362
+42,"YouGov","New York","Online panel",2024-09-12,2024-09-13,820,"Democrat","Candidate A",51.5330289630219
+43,"YouGov","New York","Online panel",2024-04-07,2024-09-14,1134,"Democrat","Candidate B",47.5791619950905
+44,"YouGov","California","Online panel",2023-10-27,2024-05-23,636,"Republican","Candidate B",44.5742639526725
+45,"YouGov","Pennsylvania","Online panel",2024-02-15,2024-02-16,694,"Democrat","Candidate A",47.1258002053946
+46,"YouGov","Pennsylvania","Online panel",2024-07-21,2024-07-22,869,"Democrat","Candidate B",59.042714801617
+47,"YouGov","California","Online panel",2024-08-31,2024-09-15,1355,"Republican","Candidate A",40.9801385598257
+48,"YouGov","New York","Online panel",2024-03-31,2024-07-03,1024,"Republican","Candidate B",49.3036530399695
+49,"YouGov","Florida","Online panel",2024-08-24,2024-08-25,610,"Democrat","Candidate A",59.127638451755
+50,"YouGov","New York","Online panel",2024-03-22,2024-08-19,971,"Democrat","Candidate A",54.1554275806993
+51,"YouGov","Texas","Online panel",2024-03-20,2024-07-19,1403,"Republican","Candidate B",54.1110799042508
+52,"YouGov","New York","Online panel",2024-07-23,2024-07-24,1182,"Republican","Candidate B",42.4609271856025
+53,"YouGov","Florida","Online panel",2023-10-21,2024-10-11,608,"Democrat","Candidate A",45.8863249002025
+54,"YouGov","Pennsylvania","Online panel",2024-04-22,2024-07-15,1440,"Republican","Candidate A",54.6348641812801
+55,"YouGov","California","Online panel",2024-03-08,2024-07-23,1475,"Democrat","Candidate B",45.448991204612
+56,"YouGov","New York","Online panel",2023-11-27,2024-08-18,1446,"Republican","Candidate A",53.6062207445502
+57,"YouGov","New York","Online panel",2024-07-30,2024-07-31,528,"Democrat","Candidate B",42.2649774327874
+58,"YouGov","Texas","Online panel",2024-04-04,2024-04-05,1039,"Democrat","Candidate A",55.5020844843239
+59,"YouGov","New York","Online panel",2024-03-09,2024-03-10,870,"Democrat","Candidate B",54.8338564252481
+60,"YouGov","Florida","Online panel",2024-02-08,2024-08-09,626,"Republican","Candidate A",43.4986608242616
+61,"YouGov","Florida","Online panel",2024-05-26,2024-06-10,1489,"Democrat","Candidate A",46.0112371575087
+62,"YouGov","California","Online panel",2024-08-16,2024-08-27,803,"Democrat","Candidate B",50.4536411631852
+63,"YouGov","California","Online panel",2024-07-20,2024-07-29,947,"Republican","Candidate B",48.0144595354795
+64,"YouGov","Florida","Online panel",2024-04-06,2024-04-07,1097,"Republican","Candidate A",47.2446025069803
+65,"YouGov","Texas","Online panel",2024-02-27,2024-08-25,1148,"Republican","Candidate B",59.7062085988
+66,"YouGov","Florida","Online panel",2024-08-23,2024-08-24,1400,"Democrat","Candidate B",50.0622246367857
+67,"YouGov","Texas","Online panel",2023-10-20,2024-08-31,1425,"Democrat","Candidate B",50.2651693252847
+68,"YouGov","Florida","Online panel",2024-05-15,2024-10-15,776,"Republican","Candidate A",55.6686135241762
+69,"YouGov","Texas","Online panel",2024-10-03,2024-10-04,1063,"Republican","Candidate A",58.8510270882398
+70,"YouGov","California","Online panel",2024-03-06,2024-08-15,532,"Republican","Candidate A",53.6145048774779
+71,"YouGov","California","Online panel",2024-08-22,2024-08-23,1269,"Republican","Candidate B",48.3965424541384
+72,"YouGov","Pennsylvania","Online panel",2024-05-14,2024-05-15,1223,"Democrat","Candidate B",45.0684035103768
+73,"YouGov","Pennsylvania","Online panel",2024-06-10,2024-06-11,589,"Republican","Candidate A",40.2699035871774
+74,"YouGov","New York","Online panel",2024-09-10,2024-09-11,1262,"Republican","Candidate A",56.8073855387047
+75,"YouGov","California","Online panel",2023-11-05,2024-02-13,1336,"Republican","Candidate B",56.2607289478183
+76,"YouGov","Florida","Online panel",2024-07-02,2024-07-03,1089,"Democrat","Candidate A",57.2677335655317
+77,"YouGov","New York","Online panel",2024-01-23,2024-08-01,1137,"Republican","Candidate B",43.5936977760866
+78,"YouGov","California","Online panel",2024-05-27,2024-05-28,542,"Republican","Candidate B",47.1794665325433
+79,"YouGov","Florida","Online panel",2024-04-16,2024-08-08,1341,"Republican","Candidate A",58.8455958524719
+80,"YouGov","Texas","Online panel",2024-10-06,2024-10-07,556,"Republican","Candidate A",40.9288676641881
+81,"YouGov","Florida","Online panel",2023-10-16,2024-08-02,530,"Republican","Candidate B",41.5791476843879
+82,"YouGov","Texas","Online panel",2023-10-07,2023-11-20,678,"Republican","Candidate A",40.691944793798
+83,"YouGov","New York","Online panel",2024-06-14,2024-06-15,911,"Republican","Candidate B",42.8029267396778
+84,"YouGov","Texas","Online panel",2024-01-14,2024-01-15,1127,"Democrat","Candidate A",45.8165919035673
+85,"YouGov","California","Online panel",2023-10-15,2024-06-18,520,"Republican","Candidate B",52.4370475206524
+86,"YouGov","New York","Online panel",2024-10-02,2024-10-03,523,"Democrat","Candidate A",53.8973065046594
+87,"YouGov","Florida","Online panel",2024-07-11,2024-07-12,980,"Democrat","Candidate B",54.7811650345102
+88,"YouGov","Florida","Online panel",2024-02-23,2024-02-24,1187,"Democrat","Candidate B",40.7986682886258
+89,"YouGov","Pennsylvania","Online panel",2023-12-25,2024-03-07,1299,"Democrat","Candidate B",48.4050859836861
+90,"YouGov","Florida","Online panel",2024-07-15,2024-08-10,857,"Republican","Candidate B",57.0716638723388
+91,"YouGov","Pennsylvania","Online panel",2024-09-02,2024-09-03,1023,"Republican","Candidate B",49.9233896704391
+92,"YouGov","New York","Online panel",2024-10-02,2024-10-03,1285,"Democrat","Candidate B",58.1400292459875
+93,"YouGov","Texas","Online panel",2024-03-21,2024-04-17,526,"Democrat","Candidate A",53.0492270877585
+94,"YouGov","Texas","Online panel",2024-02-25,2024-04-17,1326,"Democrat","Candidate B",58.866277183406
+95,"YouGov","Texas","Online panel",2024-09-26,2024-09-27,1281,"Republican","Candidate A",52.6159568177536
+96,"YouGov","California","Online panel",2024-06-04,2024-06-05,885,"Democrat","Candidate A",44.015440470539
+97,"YouGov","Texas","Online panel",2023-10-25,2024-10-06,559,"Republican","Candidate A",43.7597624026239
+98,"YouGov","New York","Online panel",2024-06-28,2024-06-29,1344,"Democrat","Candidate B",46.1400112882257
+99,"YouGov","Texas","Online panel",2024-09-03,2024-09-04,1219,"Republican","Candidate B",55.9886098420247
+100,"YouGov","Florida","Online panel",2024-09-12,2024-09-13,1427,"Democrat","Candidate B",42.144680772908
