@@ -258,6 +258,24 @@ plot(first_model, "rhat")
 
 \newpage
 
+# Appendix 1
+
+## Population, Frame, and Sample
+YouGov conducted surveys with adults in the U.S. who have internet access. They used their online group of people as the sample frame. This frame covers a wide population. For each survey, the sample includes people from this group who fit specific requirements set for that survey. This helps collect data that targets certain information.
+
+## Sample Recruitment
+YouGov worked actively to bring people into their panel. They used different ways of advertising and worked with various partners across many types of media. This method aimed to gather a wide range of people. This helps make sure the group of survey takers represents many different kinds of people in the U.S. However, it mostly includes people who can use the internet.
+
+## Sampling Methodology
+YouGov used a non-probability method to find people for their online panel through various media sources. This helps improve how well the panel represents different groups of people. This method is fast and lets them interact with the survey takers through surveys that can include videos and pictures. But, relying on people who choose to join and using digital surveys might limit who takes part and affect the survey's accuracy. They made the survey results match the general population by adjusting weights according to certain standards.
+
+## Handling Non-Response
+They managed the issue of people not responding to surveys by adjusting the survey sample's make-up. They did this using weights based on well-known data like the U.S. Census.
+
+## Questionnaire Design
+YouGov designed their questionnaires to be easy to access and interesting, often using videos and pictures to give more information. However, using digital formats might stop people with limited internet skills or access from taking part.
+
+
 
 # References
 
