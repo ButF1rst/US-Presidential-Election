@@ -23,10 +23,10 @@ library(tidyverse)
 library(palmerpenguins)
 library(ggplot2)
 library(here)
+library(arrow)
 
 # Load the dataset
-data <- read_csv(here::here("data","analysis_data","analysis_data.csv"))
-
+data <- read_parquet(here("data", "analysis_data", "analysis_data.parquet") )
 ```
 
 
@@ -56,63 +56,46 @@ We use the statistical programming language R [@citeR].There are totally 17749 o
 
 Below is the key variable from dataset that we used for our analysis:
 
-Poll ID (poll_id): Uniquely identifies each poll.
-Pollster (pollster): The organization that conducted the poll.
-State (state): The state in which the poll was conducted.
-Numeric Grade (numeric_grade): A grade assigned to the pollster based on their historical accuracy and methodology, where grades equal to or greater than 3 have been included for analysis to ensure data reliability.
-Methodology (methodology): The method used for polling, such as phone, online and so on.
-Start Date (start_date) and End Date (end_date): The duration over which the poll was conducted.
-Sample Size (sample_size): The number of respondents in the poll.
-Party (party): The political party of the candidate.
-Candidate Name (candidate_name): The name of the candidate to whom the poll response pertains, originally recorded under 'answer' and renamed for clarity.
-Percentage (pct): The percentage of respondents favoring the candidate.
+- poll_id: Uniquely identifies each poll.
+- pollster: The organization that conducted the poll.
+- state: The state in which the poll was conducted.
+- numeric_grade: A grade assigned to the pollster based on their historical accuracy and methodology, where grades equal to or greater than 3 have been included for analysis to ensure data reliability.
+- methodology: The method used for polling, such as phone, online and so on.
+- start_date and end_date: The duration over which the poll was conducted.
+- sample_size: The number of respondents in the poll.
+- population: The abbreviation of the respondent group indicating their voting status, such as “likely voters” or “adults” 
+- party: The political party of the candidate.
+- candidate_name: The name of the candidate to whom the poll response pertains, originally recorded under 'answer' and renamed for clarity.
+- pct: The percentage of respondents favoring the candidate.
 
-After studying the data, we decided to select pollsters with a numeric grade greater than or equal to three because the results of such polling organizations are more meaningful. And we set candidate names to Harris and Trump, which are the two most widely watched candidates this year.
+After studying the data and cleaning the data, we decided to select pollsters with a numeric grade greater than or equal to three because the results of such polling organizations are more meaningful. And we set candidate names to Harris and Trump, which are the two most widely watched candidates this year.
 
 ## Measurement
 	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+In order to show how political developments affect public opinion, variables like State, Start Date, End Date, and Candidate Name link the data to particular electoral events and timelines. Methodological specifics guarantee that the technique used to gather the data is suitable for obtaining an accurate representation of voter sentiment.
+
+The degree to which these attitudes reflect the electorate's actual views can vary depending on the data collection method (methodology), whether it be online, in-person, or over the phone. This is because different methodologies are susceptible to biases such as selection bias and nonresponse bias.
+
 
 ## Outcome variables
 
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
+The dataset primarily revolves around understanding and predicting voter preferences and trends through various polling metrics. The key outcome variables in this dataset are:
 
+- candidate_name: This variable captures the preference expressed by the polled individuals, indicating which candidate they intend to vote for or support. It serves as the primary outcome variable for analyses aimed at gauging candidate popularity and electoral viability.
+
+- pct: This variable represents the percentage of respondents who support a given candidate in each poll. It is crucial for conducting detailed trend analysis over time and across different demographic segments within each state.
+
+To comprehend the dynamics determining voter preference, these result factors are compared to a variety of predictor variables (independent variables), including state, sample size, and pollster numeric_grade. Through the start_date and end_date columns, which specify the length of each poll, the dataset also enables time-series analysis, which aids in monitoring shifts in public sentiment before the election. Analyzing these result variables can reveal information about regional preferences, the success of campaign tactics, and possible changes in the voting base brought about by current political developments and socioeconomic determinants.
 
 
 Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 
-```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
-#| echo: false
-#| warning: false
-#| message: false
 
-data <- read_csv(here::here("data","analysis_data","analysis_data.csv"), show_col_types = FALSE)
-
-
-```
 
 Talk more about it.
 
 And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
 
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
-#| message: false
-
-analysis_data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
-
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
-```
 
 Talk way more about it. 
 
@@ -230,26 +213,7 @@ In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. 
 
 In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
 
-```{r}
-#| eval: true
-#| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
 
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
-
-posterior_vs_prior(first_model) +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
-```
 
 ## Diagnostics
 

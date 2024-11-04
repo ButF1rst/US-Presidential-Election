@@ -21,23 +21,20 @@ data <- read_csv("data/raw_data/raw_president_election.csv", show_col_types = FA
 
 # Select the required columns and rename 'answer' to 'candidate_name'
 analysis_data <- data |>
-  select(poll_id, pollster, state, numeric_grade, methodology, start_date, end_date, sample_size, party, answer, pct) %>%
-  rename(candidate_name = answer)
-
-# Clean the data by removing rows with any missing values in the selected columns
-# and correct the date format issue by adjusting the year
-
-analysis_data <- analysis_data |>
-  filter(!is.na(poll_id) & !is.na(pollster) & !is.na(state) & !is.na(methodology) & 
-           !is.na(start_date) & !is.na(end_date) & !is.na(sample_size) & !is.na(party) & 
-           !is.na(candidate_name) & !is.na(pct)) |>
+  select(poll_id, pollster, state, numeric_grade, methodology, start_date, end_date, sample_size, population, party, answer, pct) |>
+  rename(candidate_name = answer) |>
   mutate(
-    start_date = as.Date(start_date, format = "%Y-%m-%d"),
-    end_date = as.Date(end_date, format = "%Y-%m-%d"),
-    # Correct the year assuming it is written as '0024' and should be '2024'
-    start_date = if_else(year(start_date) == 24, update(start_date, year = 2024), start_date),
-    end_date = if_else(year(end_date) == 24, update(end_date, year = 2024), end_date)
+    nation_or_state = if_else(is.na(state), 0, 1), # If state is NA, nation or state is equal to 0. Otherwise, it equals to 1. 
+    start_date = as.Date(start_date, format="%m/%d/%y"), 
+    end_date = as.Date(end_date, format="%m/%d/%y")
+  ) |>
+  filter(
+    !is.na(poll_id) & !is.na(pollster) & !is.na(methodology) & 
+      !is.na(start_date) & !is.na(end_date) & !is.na(sample_size) & 
+      !is.na(party) & !is.na(candidate_name) & !is.na(pct) & 
+      !is.na(numeric_grade)
   )
+
 
 # Write the DataFrame to a Parquet file
 write_parquet(analysis_data, "data/analysis_data/analysis_data.parquet")

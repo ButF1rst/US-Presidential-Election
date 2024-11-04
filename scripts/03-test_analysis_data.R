@@ -8,32 +8,29 @@
 # Any other information needed? None
 
 #### Workspace setup ####
-library(tidyverse)
-library(readr)
 library(dplyr)
+library(arrow)
 library(testthat)
 
-# Load the dataset
-analysis_data <- read_csv("data/analysis_data/analysis_data.csv", show_col_types = FALSE)
+# Load the dataset from a Parquet file
+analysis_data <- read_parquet("data/analysis_data/analysis_data.parquet")
 
-# Convert date columns
-analysis_data <- analysis_data %>%
-  mutate(
-    start_date = as.Date(start_date, format = "%m/%d/%Y"),
-    end_date = as.Date(end_date, format = "%m/%d/%Y")
-  )
+# Tests for the dataset
 
-# Re-test for missing values
-test_that("No missing values in critical columns", {
-  expect_true(all(complete.cases(analysis_data)), "There are still missing values after cleaning")
+# Test if there are any missing values in key outcome variables
+test_that("No missing values in key outcome variables", {
+  expect_true(all(complete.cases(analysis_data[c("candidate_name", "pct")])),
+              "There are missing values in candidate_name or pct")
 })
 
-# Test that all answers are 'Trump'
-test_that("All answers are 'Trump'", {
-  expect_true(all(analysis_data$answer == "Trump"))
+# Test if all pct values are within the expected range (0-100)
+test_that("Percentage values are within the expected range", {
+  expect_true(all(analysis_data$pct >= 0 & analysis_data$pct <= 100),
+              "pct values are outside the range of 0 to 100")
 })
 
-# Test to ensure 'pct' values are not negative
-test_that("Percentage values are not negative", {
-  expect_true(all(analysis_data$pct >= 0), "There are negative values in pct")
+# Test if 'nation_or_state' only contains 0 and 1
+test_that("nation_or_state contains only 0 and 1", {
+  expect_true(all(analysis_data$nation_or_state %in% c(0, 1)))
 })
+
