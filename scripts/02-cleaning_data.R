@@ -11,20 +11,20 @@
 library(tidyverse)
 library(readr)
 library(dplyr)
+library(lubridate)
 
-#### Data cleaning and transformation ####
+# Read the dataset
+data <- read_csv("data/raw_data/raw_president_election.csv", show_col_types = FALSE)
 
-data <- read_csv("data/01-raw_data/raw_president_election.csv")
-
-### Select the required columns ###
-selected_data <- data %>%
-  select(poll_id, pollster, state, methodology, start_date, end_date, sample_size, party, answer, pct) %>%
-  filter(pollster == "YouGov")
+# Select the required columns
+analysis_data <- data %>%
+  select(poll_id, pollster, state, methodology, start_date, end_date, sample_size, party, answer, pct)
 
 ### Clean the data by removing rows with any missing values in the selected columns ###
-cleaned_data <- selected_data %>%
-  filter(!is.na(poll_id) & !is.na(pollster) & !is.na(state) & !is.na(methodology) & 
+analysis_data <- analysis_data %>%
+  filter(answer == "Trump", 
+    !is.na(poll_id) & !is.na(pollster) & !is.na(state) & !is.na(methodology) & 
            !is.na(start_date) & !is.na(end_date) & !is.na(sample_size) & !is.na(party) & !is.na(answer) & !is.na(pct))
 
-### Write the cleaned data to a new CSV file ###
-write_csv(cleaned_data, "data/02-analysis_data/analysis_data.csv")
+# Write the cleaned data to a new CSV file
+write_csv(analysis_data, "data/analysis_data/analysis_data.csv")

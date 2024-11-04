@@ -1,12 +1,12 @@
 ---
-title: "My title"
+title: "The Battle for America: Forecasting about the 2024 Presidential Election"
 subtitle: "My subtitle if needed"
 author: 
   - Yi Tang
   - Jin Zhang
   - Siyuan Lu
 thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
-date: today
+date: Nov 1, 2024
 date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 format: pdf
@@ -21,12 +21,15 @@ bibliography: references.bib
 
 library(tidyverse)
 library(palmerpenguins)
+library(ggplot2)
+library(here)
 ```
 
 
 # Introduction
 
 Overview paragraph
+
 
 Estimand paragraph
 
@@ -42,6 +45,7 @@ Telegraphing paragraph: The remainder of this paper is structured as follows. @s
 
 
 # Data {#sec-data}
+
 
 ## Overview
 
@@ -65,14 +69,22 @@ Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 #| label: fig-bills
 #| fig-cap: Bills of penguins
 #| echo: false
+#| warning: false
+#| message: false
 
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
+data <- read_csv(here::here("data","analysis_data","analysis_data.csv"), show_col_types = FALSE)
+
+# Create a bar graph
+ggplot(data, aes(x=state, fill=answer)) + 
+  geom_bar(position="dodge") +
+  scale_fill_brewer(palette="Paired") +  # Applying a color palette that's good for categorical data
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size=12), # Rotate and adjust size of x-axis labels
+        plot.title = element_text(size=14, face="bold"), # Bold and larger title
+        plot.margin = unit(c(1,1,1,1), "cm")) + # Expanding plot margins
+  labs(title="Relationship between State and Answer",
+       x="State",
+       y="Count of Answers",
+       fill="Answer")
 ```
 
 Talk more about it.
@@ -86,7 +98,7 @@ And also planes (@fig-planes). (You can change the height and width, but don't w
 #| warning: false
 #| message: false
 
-analysis_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
+analysis_data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
 
 analysis_data |> 
   ggplot(aes(x = width, y = length)) +
