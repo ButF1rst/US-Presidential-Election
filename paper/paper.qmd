@@ -23,6 +23,10 @@ library(tidyverse)
 library(palmerpenguins)
 library(ggplot2)
 library(here)
+
+# Load the dataset
+data <- read_csv(here::here("data","analysis_data","analysis_data.csv"))
+
 ```
 
 
@@ -46,12 +50,24 @@ Telegraphing paragraph: The remainder of this paper is structured as follows. @s
 
 # Data {#sec-data}
 
-
 ## Overview
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
+We use the statistical programming language R [@citeR].There are totally 17749 observations in the original dataset. Variables in the dataset help analyze and expect the final outcome of US Presidential Election in 2024.
 
-Overview text
+Below is the key variable from dataset that we used for our analysis:
+
+Poll ID (poll_id): Uniquely identifies each poll.
+Pollster (pollster): The organization that conducted the poll.
+State (state): The state in which the poll was conducted.
+Numeric Grade (numeric_grade): A grade assigned to the pollster based on their historical accuracy and methodology, where grades equal to or greater than 3 have been included for analysis to ensure data reliability.
+Methodology (methodology): The method used for polling, such as phone, online and so on.
+Start Date (start_date) and End Date (end_date): The duration over which the poll was conducted.
+Sample Size (sample_size): The number of respondents in the poll.
+Party (party): The political party of the candidate.
+Candidate Name (candidate_name): The name of the candidate to whom the poll response pertains, originally recorded under 'answer' and renamed for clarity.
+Percentage (pct): The percentage of respondents favoring the candidate.
+
+After studying the data, we decided to select pollsters with a numeric grade greater than or equal to three because the results of such polling organizations are more meaningful. And we set candidate names to Harris and Trump, which are the two most widely watched candidates this year.
 
 ## Measurement
 	
@@ -74,17 +90,7 @@ Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 
 data <- read_csv(here::here("data","analysis_data","analysis_data.csv"), show_col_types = FALSE)
 
-# Create a bar graph
-ggplot(data, aes(x=state, fill=answer)) + 
-  geom_bar(position="dodge") +
-  scale_fill_brewer(palette="Paired") +  # Applying a color palette that's good for categorical data
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, size=12), # Rotate and adjust size of x-axis labels
-        plot.title = element_text(size=14, face="bold"), # Bold and larger title
-        plot.margin = unit(c(1,1,1,1), "cm")) + # Expanding plot margins
-  labs(title="Relationship between State and Answer",
-       x="State",
-       y="Count of Answers",
-       fill="Answer")
+
 ```
 
 Talk more about it.
