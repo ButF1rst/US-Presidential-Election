@@ -21,6 +21,13 @@ bibliography: references.bib
 
 library(tidyverse)
 library(palmerpenguins)
+<<<<<<< Updated upstream
+=======
+library(ggplot2)
+library(here)
+
+data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
+>>>>>>> Stashed changes
 ```
 
 
@@ -59,13 +66,14 @@ Add graphs, tables and text. Use sub-sub-headings for each outcome variable or u
 
 
 
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
+Some of our data is of penguins (@fig-state), from @palmerpenguins.
 
 ```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
+#| label: fig-state
+#| fig-cap: Poll results by state
 #| echo: false
 
+<<<<<<< Updated upstream
 ggplot(penguins, aes(x = island, fill = species)) +
   geom_bar(alpha = 0.8) +
   scale_fill_manual(values = c("darkorange","purple","cyan4"),
@@ -73,31 +81,64 @@ ggplot(penguins, aes(x = island, fill = species)) +
   theme_minimal() +
   facet_wrap(~species, ncol = 1) +
   coord_flip()
+=======
+
+# Summarize the data by state
+state_summary <- data |>
+  group_by(state) |>
+  summarize(avg_pct = mean(pct))
+
+# Create a bar graph
+ggplot(state_summary, aes(x = reorder(state, -avg_pct), y = avg_pct)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Average Poll Results by State", x = "State", y = "Average Percentage") +
+  theme(axis.text.y = element_text(size = 8, hjust = 1, lineheight = 10))
+>>>>>>> Stashed changes
 ```
 
 Talk more about it.
 
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
+And also planes (@fig-date). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
 
 ```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
+#| label: fig-date
+#| fig-cap: How the poll results change over time
 #| echo: false
 #| warning: false
 #| message: false
 
+<<<<<<< Updated upstream
 analysis_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
+=======
+# Convert dates to Date type
+data$start_date <- as.Date(data$start_date, format = "%m/%d/%y")
+data$end_date <- as.Date(data$end_date, format = "%m/%d/%y")
+>>>>>>> Stashed changes
 
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
+# Create a line graph
+ggplot(data, aes(x = start_date, y = pct, color = state)) +
+  geom_line() +
+  labs(title = "Poll Results Over Time", x = "Date", y = "Percentage")
 ```
 
 Talk way more about it. 
 
+```{r}
+#| label: fig-methology
+#| fig-cap: Different methodologies compare in terms of poll results
+#| echo: false
+#| warning: false
+#| message: false
+
+data$start_date <- as.Date(data$start_date, format = "%m/%d/%y")
+data$end_date <- as.Date(data$end_date, format = "%m/%d/%y")
+
+# Create a line plot
+ggplot(data, aes(x = start_date, y = pct, color = state)) +
+  geom_line() +
+  labs(title = "Poll Results Over Time", x = "Date", y = "Percentage")
+```
 ## Predictor variables
 
 Add graphs, tables and text.
@@ -197,16 +238,81 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
+<<<<<<< Updated upstream
+=======
+# Appendix 1
 
-# Additional data details
+## Population, Frame, and Sample
+YouGov conducted surveys with adults in the U.S. who have internet access. They used their online group of people as the sample frame. This frame covers a wide population. For each survey, the sample includes people from this group who fit specific requirements set for that survey. This helps collect data that targets certain information.
+>>>>>>> Stashed changes
 
-# Model details {#sec-model-details}
+## Sample Recruitment
+YouGov worked actively to bring people into their panel. They used different ways of advertising and worked with various partners across many types of media. This method aimed to gather a wide range of people. This helps make sure the group of survey takers represents many different kinds of people in the U.S. However, it mostly includes people who can use the internet.
 
-## Posterior predictive check
+## Sampling Methodology
+YouGov used a non-probability method to find people for their online panel through various media sources. This helps improve how well the panel represents different groups of people. This method is fast and lets them interact with the survey takers through surveys that can include videos and pictures. But, relying on people who choose to join and using digital surveys might limit who takes part and affect the survey's accuracy. They made the survey results match the general population by adjusting weights according to certain standards.
 
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
+## Handling Non-Response
+They managed the issue of people not responding to surveys by adjusting the survey sample's make-up. They did this using weights based on well-known data like the U.S. Census.
 
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
+## Questionnaire Design
+YouGov designed their questionnaires to be easy to access and interesting, often using videos and pictures to give more information. However, using digital formats might stop people with limited internet skills or access from taking part.
+
+# Appendix 2 Idealized survey of the US presidential election
+
+##  Sampling Approach
+The goal is to create a nationally representative sample that captures diverse demographic and geographic subgroups while adjusting for known biases that often affect election polls.
+
+Sampling Method: Utilize a multi-stage, stratified random sampling approach, where:
+- Stage 1: Divide the country into strata based on geography and demographic characteristics.
+- Stage 2: Within each stratum, randomly select respondents from voter databases, ideally from registered voter lists or from online polling panels with voter record verification.
+Sample Size: Aim for 3,000-5,000 respondents per survey wave. Given the budget, it’s feasible to run three to four waves before the election.
+Frequency of Surveys: Conduct surveys once every two weeks in the six months leading up to the election, increasing frequency to weekly in the final month to capture late shifts in voter opinion.
+
+## Recruitment of Respondents
+Online and Phone Hybrid: Combine both online and telephone surveys to include older demographics and lower tech populations, who may be underrepresented in online panels.
+Incentivized Participation: Offer small incentives, such as gift cards or cash rewards, to increase participation. Budget allocation would provide roughly $5-10 per respondent.
+Panel Partnerships: Partner with existing panels to recruit a portion of respondents, focusing on those with verified voter registration to ensure that our respondents are indeed likely voters.
+
+## Data Collection and Survey Design
+Questionnaire Design: Keep the survey concise to maintain engagement (10–15 minutes max), focusing on
+- Demographic and geographic questions to enable weighting adjustments
+- Voter enthusiasm and likelihood to vote
+- Voting intention (“Who do you intend to vote for?”)
+- Policy issues to detect shifts in preferences
+Continuous Validation: Conduct split-ballot tests to check for bias in question wording and rotate questions in order to minimize order effects.
+
+## Data Validation and Quality Control
+Screening for Quality Responses:
+- Use attention-check questions to filter inattentive respondents.
+- Monitor completion times to identify respondents who rush through the survey.
+- Run post-survey verification against voter files for a subset of respondents to ensure accuracy.
+Weighting and Adjustment: Use post-stratification weighting based on Census and voter file data to adjust for demographics, political affiliation, and geography. Utilize iterative proportional fitting to align the sample closely with known population parameters.
+Likely Voter Model: Develop a likely voter model based on past voting behavior, stated likelihood of voting, and level of political interest to filter for those most likely to vote.
+
+## Poll Aggregation and Forecasting Model
+To improve the accuracy of the forecast, our poll will contribute to an aggregate forecasting model that combines our data with other high-quality public polls.
+
+Weighted Poll Aggregation: Apply a weighting algorithm to balance our data with publicly available data from trusted pollsters. Pollster ratings, recent performance, sample size, and recency would factor into the weighting to reduce bias from outliers. Higher weights would be given to our proprietary data, given our control over sampling rigor and response validation.
+Trend Analysis: Track trends in voter sentiment across demographic and geographic groups. For example, analyzing shifts in voter sentiment across key swing states will help refine state-specific forecasts.
+Forecasting Model: Use a Bayesian model to predict election outcomes, updating priors with new survey data as election day approaches. The model would account for historical election data, national polling trends, and economic indicators to improve accuracy.
+
+## Reporting and Communication of Results
+Error Margins and Confidence Intervals: Clearly communicate the margin of error, typically around ±2% for a sample size of 3,000. Highlight that margin of error may be larger for subgroup analyses.
+Forecasting Uncertainty: Quantify forecast uncertainty by generating probabilistic outcomes rather than definitive statements.
+Transparency: Publish methodology, sample demographics, and weighting adjustments to ensure transparency. This will bolster trust in the poll and its findings.
+
+## Budget Allocation Breakdown
+Panel Recruitment (3-4 waves): $40,000
+Incentives for Respondents: $20,000
+Poll Aggregation and Modeling Tools: $15,000
+Data Validation (Quality Checks): $10,000
+Reporting and Analysis: $10,000
+Miscellaneous (buffer): $5,000
+Total: $100,000
+
+## Link and copy of the survey
+https://forms.gle/oyB1sM6sUPEXCVRt5
 
 ```{r}
 #| eval: true
@@ -218,15 +324,7 @@ In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. Th
 #| fig-cap: "Examining how the model fits, and is affected by, the data"
 #| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
 
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
 
-posterior_vs_prior(first_model) +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
 ```
 
 ## Diagnostics
@@ -245,15 +343,19 @@ posterior_vs_prior(first_model) +
 #| fig-subcap: ["Trace plot", "Rhat plot"]
 #| layout-ncol: 2
 
-plot(first_model, "trace")
 
-plot(first_model, "rhat")
 ```
 
 
 
 \newpage
 
+<<<<<<< Updated upstream
+=======
+
+
+
+>>>>>>> Stashed changes
 
 # References
 
