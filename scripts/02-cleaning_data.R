@@ -20,6 +20,13 @@ library(arrow)
 data <- read_csv("data/raw_data/raw_president_election.csv", show_col_types = FALSE)
 
 # Select the required columns and rename 'answer' to 'candidate_name'
+analysis_data <- data |>
+  select(poll_id, pollster, state, numeric_grade, methodology, start_date, end_date, sample_size, party, answer, pct) %>%
+  rename(candidate_name = answer)
+
+# Clean the data by removing rows with any missing values in the selected columns
+# and correct the date format issue by adjusting the year
+
 analysis_data <- analysis_data |>
   filter(!is.na(poll_id) & !is.na(pollster) & !is.na(state) & !is.na(methodology) & 
            !is.na(start_date) & !is.na(end_date) & !is.na(sample_size) & !is.na(party) & 
