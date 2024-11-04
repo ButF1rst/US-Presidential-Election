@@ -21,13 +21,10 @@ bibliography: references.bib
 
 library(tidyverse)
 library(palmerpenguins)
-<<<<<<< Updated upstream
-=======
 library(ggplot2)
 library(here)
 
 data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
->>>>>>> Stashed changes
 ```
 
 
@@ -73,16 +70,6 @@ Some of our data is of penguins (@fig-state), from @palmerpenguins.
 #| fig-cap: Poll results by state
 #| echo: false
 
-<<<<<<< Updated upstream
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-=======
-
 # Summarize the data by state
 state_summary <- data |>
   group_by(state) |>
@@ -93,8 +80,7 @@ ggplot(state_summary, aes(x = reorder(state, -avg_pct), y = avg_pct)) +
   geom_bar(stat = "identity", fill = "steelblue") +
   coord_flip() +
   labs(title = "Average Poll Results by State", x = "State", y = "Average Percentage") +
-  theme(axis.text.y = element_text(size = 8, hjust = 1, lineheight = 10))
->>>>>>> Stashed changes
+  theme(axis.text.y = element_text(size = 8, hjust = 1)
 ```
 
 Talk more about it.
@@ -108,18 +94,7 @@ And also planes (@fig-date). (You can change the height and width, but don't wor
 #| warning: false
 #| message: false
 
-<<<<<<< Updated upstream
-analysis_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
-=======
-# Convert dates to Date type
-data$start_date <- as.Date(data$start_date, format = "%m/%d/%y")
-data$end_date <- as.Date(data$end_date, format = "%m/%d/%y")
->>>>>>> Stashed changes
 
-# Create a line graph
-ggplot(data, aes(x = start_date, y = pct, color = state)) +
-  geom_line() +
-  labs(title = "Poll Results Over Time", x = "Date", y = "Percentage")
 ```
 
 Talk way more about it. 
@@ -131,13 +106,6 @@ Talk way more about it.
 #| warning: false
 #| message: false
 
-data$start_date <- as.Date(data$start_date, format = "%m/%d/%y")
-data$end_date <- as.Date(data$end_date, format = "%m/%d/%y")
-
-# Create a line plot
-ggplot(data, aes(x = start_date, y = pct, color = state)) +
-  geom_line() +
-  labs(title = "Poll Results Over Time", x = "Date", y = "Percentage")
 ```
 ## Predictor variables
 
@@ -193,8 +161,7 @@ Our results are summarized in @tbl-modelresults.
 
 library(rstanarm)
 
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
+first_model <- readRDS(file = here::here("models/first_model.rds"))
 ```
 
 ```{r}
@@ -238,13 +205,10 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
-<<<<<<< Updated upstream
-=======
 # Appendix 1
 
 ## Population, Frame, and Sample
 YouGov conducted surveys with adults in the U.S. who have internet access. They used their online group of people as the sample frame. This frame covers a wide population. For each survey, the sample includes people from this group who fit specific requirements set for that survey. This helps collect data that targets certain information.
->>>>>>> Stashed changes
 
 ## Sample Recruitment
 YouGov worked actively to bring people into their panel. They used different ways of advertising and worked with various partners across many types of media. This method aimed to gather a wide range of people. This helps make sure the group of survey takers represents many different kinds of people in the U.S. However, it mostly includes people who can use the internet.
@@ -345,17 +309,6 @@ https://forms.gle/oyB1sM6sUPEXCVRt5
 
 
 ```
-
-
-
-\newpage
-
-<<<<<<< Updated upstream
-=======
-
-
-
->>>>>>> Stashed changes
 
 # References
 
