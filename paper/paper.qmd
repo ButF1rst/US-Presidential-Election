@@ -118,18 +118,37 @@ Here we briefly describe the Bayesian analysis model used to investigate... Back
 
 ## Model set-up
 
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
+In our study, we aim to predict who will win the 2024 US Presidential Election—Donald Trump or Kamala Harris. We use a dataset gathered from upcoming polls that has been carefully cleaned to make sure our predictions are accurate. Because predicting election results can be complex and influenced by many changing factors, we have decided to use a linear regression model.
 
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
+We apply the `lm` function in the `R` software [@citeR] to create our linear regression model. This method lets us look at how many people support Donald John Trump as a percentage, assuming we have enough data to treat this percentage as continuous. Our model looks at how four main factors might affect Trump's support; these factors are explained in the methods part of our study.Linear regression is especially useful for our analysis because it is simple and the results are easy to understand. It helps us clearly show how much each factor affects the election results, which helps us see what most influences how people vote.
 
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
+For more details about how the model is set up, including the checks we do to make sure it works right and other analyses, please look at the appendix. This part of our report makes sure our results are strong by fully describing the tests and checks we do, confirming our predictions are reliable.
+
+$$
+\begin{aligned}
+y_i | \mu_i & \sim \text{Normal}(\mu_i, \sigma) \\
+\mu_i &= \beta_0 + \beta_1 \times \text{age}_i + \beta_2 \times \text{Income}_i + \beta_3 \times \text{Education level}_i + \beta_4 \times \text{State}_i \\
+\beta_0 & \sim \text{Normal}(0, 2.5) \\
+\beta_1 & \sim \text{Normal}(0, 2.5) \\
+\beta_2 & \sim \text{Normal}(0, 2.5) \\
+\beta_3 & \sim \text{Normal}(0, 2.5) \\
+\beta_4 & \sim \text{Normal}(0, 2.5) \\
+\sigma & \sim \text{Exponential}(1)
+\end{aligned}
+$$
+Explanation of Changes and Model Components:
+
+$y_i$: Represents the proportion of respondents who support Donald Trump. This shift changes the target variable but the model's structure remains suitable for predicting a proportion as a continuous outcome.
+$\mu_i$: Represents the expected proportion of support for Trump given the predictors. This linear combination of predictors adjusts the model's focus to align with the support dynamics for Trump.
+Predictors: The model now explicitly uses age, Income, Education level, and State as predictors. These reflect more directly measurable and common factors that might influence election support patterns:
+$\beta_1$ (age): Might capture variations in political preference across different age groups.
+$\beta_2$ (Income): Allows the model to assess how economic status influences political preferences.
+$\beta_3$ (Education level): Could indicate how educational backgrounds affect support.
+$\beta_4$ (State): Accounts for geographical variations in support, which are critical in U.S. elections.
+Priors:
+Intercept and Coefficients: All coefficients, including the intercept, continue to assume a normal prior with a mean of 0 and a standard deviation of 2.5, implying no initial bias towards any outcome.
+$\sigma$: The standard deviation of the residuals assumes an exponential prior, which suggests that large deviations from the observed proportions of support are considered improbable, maintaining a focus on tighter prediction intervals.
+
 
 
 ### Model justification
